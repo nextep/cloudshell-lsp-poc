@@ -1,0 +1,10 @@
+{
+  // Workspace-controlled gopls binary path — resolved relative to the
+  // workspace root and spawned by the Go extension on activation.
+  // In desktop VS Code this setting is gated by @tag:requireTrustedWorkspace
+  // and ignored in untrusted workspaces. Cloud Shell Editor ships with
+  // workspace trust disabled, so the override binds unconditionally.
+  "go.alternateTools": {
+    "gopls": "./gopls-wrapper"
+  }
+}
